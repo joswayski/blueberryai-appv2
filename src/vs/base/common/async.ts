@@ -160,9 +160,9 @@ export interface ITask<T> {
  * A helper to prevent accumulation of sequential async tasks.
  *
  * Imagine a mail courier with the sole task of delivering letters. As soon as
- * a letter submitted for delivery, he drives to the destination, delivers it
+ * a letter submitted for delivery, they drive to the destination, delivers it
  * and returns to his base. Imagine that during the trip, N more letters were submitted.
- * When the mail courier returns, he picks those N letters and delivers them all in a
+ * When the mail courier returns, they pick those N letters and delivers them all in a
  * single trip. Even though N+1 submissions occurred, only 2 deliveries were made.
  *
  * The throttler implements this via the queue() method, by providing it a task
@@ -406,8 +406,8 @@ export class Delayer<T> implements IDisposable {
  *
  * The mail courier is clever and waits for a certain amount of time, before going
  * out to deliver letters. While the mail courier is going out, more letters arrive
- * and can only be delivered once he is back. Once he is back the mail courier will
- * do one more trip to deliver the letters that have accumulated while he was out.
+ * and can only be delivered once they are back. Once they are back the mail courier will
+ * do one more trip to deliver the letters that have accumulated while they were out.
  */
 export class ThrottledDelayer<T> {
 
